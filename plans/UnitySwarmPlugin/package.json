@@ -1,0 +1,57 @@
+{
+  "name": "com.swarmworld.unity-swarm-ai",
+  "version": "1.0.0",
+  "displayName": "Unity Swarm AI",
+  "description": "Advanced swarm intelligence and collective behavior system for Unity with integrated Claude Flow coordination",
+  "unity": "2022.3",
+  "documentationUrl": "https://github.com/swarm-world/unity-swarm-plugin",
+  "changelogUrl": "https://github.com/swarm-world/unity-swarm-plugin/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/swarm-world/unity-swarm-plugin/blob/main/LICENSE.md",
+  "keywords": [
+    "swarm",
+    "ai", 
+    "collective-behavior",
+    "boids",
+    "emergence",
+    "performance",
+    "claude-flow"
+  ],
+  "author": {
+    "name": "Swarm World",
+    "email": "contact@swarmworld.dev",
+    "url": "https://swarmworld.dev"
+  },
+  "dependencies": {
+    "com.unity.burst": "1.8.4",
+    "com.unity.collections": "1.4.0",
+    "com.unity.entities": "1.0.16",
+    "com.unity.jobs": "0.70.0",
+    "com.unity.mathematics": "1.2.6",
+    "com.unity.render-pipelines.core": "14.0.8"
+  },
+  "samples": [
+    {
+      "displayName": "Basic Swarm Behaviors",
+      "description": "Simple boid flocking, separation, alignment, and cohesion examples",
+      "path": "Samples~/BasicBehaviors"
+    },
+    {
+      "displayName": "Performance Demos",
+      "description": "Large scale swarm demonstrations with 10k+ agents",
+      "path": "Samples~/PerformanceDemos"
+    },
+    {
+      "displayName": "Formation Systems",
+      "description": "Complex formation patterns and tactical behaviors",
+      "path": "Samples~/FormationSystems"
+    },
+    {
+      "displayName": "Claude Flow Integration",
+      "description": "AI-powered swarm coordination examples",
+      "path": "Samples~/ClaudeFlowIntegration"
+    }
+  ],
+  "testables": [
+    "com.swarmworld.unity-swarm-ai"
+  ]
+}

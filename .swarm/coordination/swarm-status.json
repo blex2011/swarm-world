@@ -1,0 +1,76 @@
+{
+  "swarmId": "swarm-1752330915929",
+  "status": "INITIALIZED",
+  "coordinator": "SWARM_COORDINATOR",
+  "topology": {
+    "type": "hierarchical",
+    "maxAgents": 7,
+    "activeAgents": 0,
+    "pendingAgents": 7
+  },
+  "execution": {
+    "mode": "parallel",
+    "coordination": "mandatory",
+    "memoryEnabled": true,
+    "hooksRequired": true
+  },
+  "performance": {
+    "tasksTotal": 10,
+    "tasksCompleted": 2,
+    "tasksInProgress": 2,
+    "tasksPending": 6,
+    "efficiency": "initializing",
+    "parallelization": "pending"
+  },
+  "memory": {
+    "coordinationPoints": 3,
+    "agentMemory": {},
+    "sharedDecisions": [],
+    "crossAgentSync": "active"
+  },
+  "agents": [
+    {
+      "id": "architect-001",
+      "status": "pending_spawn",
+      "coordination": "not_started",
+      "memoryKeys": []
+    },
+    {
+      "id": "coordinator-001",
+      "status": "pending_spawn", 
+      "coordination": "not_started",
+      "memoryKeys": []
+    },
+    {
+      "id": "analyst-001",
+      "status": "pending_spawn",
+      "coordination": "not_started", 
+      "memoryKeys": []
+    },
+    {
+      "id": "researcher-001",
+      "status": "pending_spawn",
+      "coordination": "not_started",
+      "memoryKeys": []
+    },
+    {
+      "id": "memory-001",
+      "status": "pending_spawn",
+      "coordination": "not_started",
+      "memoryKeys": []
+    },
+    {
+      "id": "monitor-001", 
+      "status": "pending_spawn",
+      "coordination": "not_started",
+      "memoryKeys": []
+    },
+    {
+      "id": "optimizer-001",
+      "status": "pending_spawn",
+      "coordination": "not_started",
+      "memoryKeys": []
+    }
+  ],
+  "lastUpdated": "2025-07-12T14:35:16.000Z"
+}

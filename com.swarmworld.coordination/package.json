@@ -1,0 +1,48 @@
+{
+  "name": "com.swarmworld.coordination",
+  "displayName": "Swarm World - AI Coordination Plugin",
+  "version": "1.0.0",
+  "description": "Advanced AI swarm coordination system for Unity with neural pattern learning and distributed memory management.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Swarm World Team",
+    "email": "support@swarmworld.ai"
+  },
+  "keywords": [
+    "AI",
+    "swarm",
+    "coordination",
+    "neural",
+    "machine learning",
+    "distributed systems"
+  ],
+  "category": "AI & Machine Learning",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "com.unity.performance.profile-analyzer": "1.2.2",
+    "com.unity.collections": "2.1.4",
+    "com.unity.burst": "1.8.4",
+    "com.unity.jobs": "0.70.0-preview.7",
+    "com.unity.mathematics": "1.2.6"
+  },
+  "testables": [
+    "com.swarmworld.coordination"
+  ],
+  "samples": [
+    {
+      "displayName": "Basic Swarm Setup",
+      "description": "Simple swarm coordination example",
+      "path": "Samples~/BasicSwarm"
+    },
+    {
+      "displayName": "Advanced Neural Coordination",
+      "description": "Neural pattern learning with distributed memory",
+      "path": "Samples~/AdvancedNeural"
+    },
+    {
+      "displayName": "Performance Benchmarks",
+      "description": "Performance testing and benchmarking tools",
+      "path": "Samples~/PerformanceBenchmarks"
+    }
+  ]
+}

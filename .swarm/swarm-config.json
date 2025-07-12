@@ -1,0 +1,72 @@
+{
+  "swarmId": "swarm-1752330915929",
+  "topology": "hierarchical",
+  "maxAgents": 7,
+  "strategy": "parallel",
+  "coordinatorAgent": "SWARM_COORDINATOR",
+  "initialized": "2025-07-12T14:35:16.000Z",
+  "agents": [
+    {
+      "id": "architect-001",
+      "type": "architect",
+      "name": "System Designer",
+      "role": "Design system architecture and coordination patterns",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "coordinator-001", 
+      "type": "coordinator",
+      "name": "Task Orchestrator",
+      "role": "Coordinate task distribution and execution",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "analyst-001",
+      "type": "analyst", 
+      "name": "Performance Analyst",
+      "role": "Monitor performance metrics and optimization opportunities",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "researcher-001",
+      "type": "researcher",
+      "name": "Pattern Researcher", 
+      "role": "Research coordination patterns and best practices",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "memory-001",
+      "type": "specialist",
+      "name": "Memory Manager",
+      "role": "Manage shared memory and cross-agent coordination",
+      "status": "pending", 
+      "priority": "high"
+    },
+    {
+      "id": "monitor-001",
+      "type": "monitor",
+      "name": "Execution Monitor",
+      "role": "Monitor parallel execution effectiveness",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "id": "optimizer-001",
+      "type": "optimizer",
+      "name": "Swarm Optimizer",
+      "role": "Continuously optimize swarm performance and topology",
+      "status": "pending",
+      "priority": "low"
+    }
+  ],
+  "coordination": {
+    "memoryEnabled": true,
+    "hooksRequired": true,
+    "parallelExecution": true,
+    "protocol": "mandatory-coordination"
+  }
+}
