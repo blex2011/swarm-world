@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2025-07-12T14:35:16.310Z",
+  "memory_structure": {
+    "global": {
+      "swarm_state": {
+        "description": "Overall swarm coordination state",
+        "path_pattern": "swarm-{swarm_id}/global/state",
+        "retention_days": 30,
+        "backup_frequency": "daily"
+      },
+      "shared_knowledge": {
+        "description": "Cross-agent shared knowledge base",
+        "path_pattern": "swarm-{swarm_id}/global/knowledge",
+        "retention_days": 90,
+        "backup_frequency": "weekly"
+      },
+      "coordination_patterns": {
+        "description": "Learned coordination patterns and strategies",
+        "path_pattern": "swarm-{swarm_id}/global/patterns",
+        "retention_days": 365,
+        "backup_frequency": "weekly"
+      }
+    },
+    "agent_specific": {
+      "agent_state": {
+        "description": "Individual agent state and progress",
+        "path_pattern": "swarm-{swarm_id}/agent-{agent_name}/state",
+        "retention_days": 7,
+        "backup_frequency": "hourly"
+      },
+      "agent_decisions": {
+        "description": "Agent decision history and rationale",
+        "path_pattern": "swarm-{swarm_id}/agent-{agent_name}/decisions",
+        "retention_days": 14,
+        "backup_frequency": "daily"
+      },
+      "agent_knowledge": {
+        "description": "Agent-specific learned knowledge",
+        "path_pattern": "swarm-{swarm_id}/agent-{agent_name}/knowledge",
+        "retention_days": 30,
+        "backup_frequency": "daily"
+      }
+    },
+    "session_based": {
+      "session_context": {
+        "description": "Session-specific context and history",
+        "path_pattern": "swarm-{swarm_id}/session-{session_id}/context",
+        "retention_days": 14,
+        "backup_frequency": "end_of_session"
+      },
+      "coordination_logs": {
+        "description": "Inter-agent coordination message logs",
+        "path_pattern": "swarm-{swarm_id}/session-{session_id}/coordination",
+        "retention_days": 7,
+        "backup_frequency": "hourly"
+      }
+    },
+    "neural_patterns": {
+      "success_patterns": {
+        "description": "Patterns that led to successful outcomes",
+        "path_pattern": "global/neural/success-{pattern_id}",
+        "retention_days": 180,
+        "backup_frequency": "weekly"
+      },
+      "failure_patterns": {
+        "description": "Patterns that led to failures for learning",
+        "path_pattern": "global/neural/failure-{pattern_id}",
+        "retention_days": 90,
+        "backup_frequency": "weekly"
+      },
+      "optimization_insights": {
+        "description": "Performance optimization insights",
+        "path_pattern": "global/neural/optimization-{insight_id}",
+        "retention_days": 365,
+        "backup_frequency": "monthly"
+      }
+    }
+  },
+  "memory_keys": {
+    "format": "{category}/{subcategory}/{identifier}",
+    "categories": ["swarm", "agent", "session", "global", "neural"],
+    "reserved_keys": ["system", "internal", "backup", "temp"],
+    "max_key_length": 255,
+    "versioning": "semantic"
+  },
+  "consistency_rules": {
+    "synchronization": {
+      "conflict_resolution": "last_write_wins",
+      "validation_required": true,
+      "checksums_enabled": true
+    },
+    "constraints": {
+      "max_memory_per_agent": "100MB",
+      "max_session_size": "50MB",
+      "max_total_memory": "10GB"
+    }
+  }
+}

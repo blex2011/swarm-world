@@ -1,0 +1,50 @@
+{
+  "config_version": "1.0.0",
+  "environment": "development",
+  "memory_persistence": {
+    "storage_backend": "sqlite",
+    "database_path": ".swarm/memory.db",
+    "backup_path": ".swarm/backups/",
+    "encryption_enabled": false,
+    "compression_enabled": true,
+    "auto_cleanup_enabled": true
+  },
+  "coordination_settings": {
+    "memory_sync_interval": 5000,
+    "conflict_detection_enabled": true,
+    "automatic_resolution": true,
+    "notification_system": true,
+    "performance_monitoring": true
+  },
+  "agent_memory_limits": {
+    "max_individual_memory": "100MB",
+    "max_session_memory": "50MB",
+    "warning_threshold": "80%",
+    "cleanup_threshold": "90%"
+  },
+  "retention_policies": {
+    "default_retention_days": 30,
+    "critical_data_retention": 365,
+    "temporary_data_retention": 1,
+    "log_retention_days": 7
+  },
+  "neural_learning": {
+    "pattern_recognition_enabled": true,
+    "success_threshold": 0.8,
+    "failure_learning_enabled": true,
+    "optimization_tracking": true,
+    "pattern_storage_limit": 1000
+  },
+  "monitoring": {
+    "memory_usage_alerts": true,
+    "performance_metrics": true,
+    "error_tracking": true,
+    "audit_logging": true
+  },
+  "security": {
+    "sanitize_memory_keys": true,
+    "validate_agent_access": true,
+    "restrict_cross_session_access": false,
+    "audit_memory_operations": true
+  }
+}
